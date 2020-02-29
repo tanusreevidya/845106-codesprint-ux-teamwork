@@ -1,0 +1,23 @@
+<br>
+<br>
+<table class="table" border="1" >
+    <tr>     
+           <!-- <th>ID</th> -->
+        <th>Buyers name</th>
+        <th>Shipping Address</th>
+        <th>City</th>
+        <th>Amount </th>
+        <th>Phone</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor=" let order of orders">
+        <!-- <td>{{user.id}}</td> -->
+        <td>{{order.bfirstname}} {{order.blastname}} </td>
+        <td>{{order.shippingadd}}</td>
+        <td>{{order.city}}</td>
+        <td>{{order.amount}}</td>
+        <td>{{order.ph1}}{{order.ph2}}{{order.ph3}}{{order.ph4}}{{order.ph5}}{{order.ph6}}{{order.ph7}}{{order.ph8}}{{order.ph9}}{{order.ph10}}</td>
+        <td><button class="btn btn-primary" (click)="update(order)"> Update </button>
+        <button class="btn btn-danger" (click)="delete(order)"> Delete </button></td>
+    </tr>
+</table>

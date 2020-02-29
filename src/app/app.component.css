@@ -1,0 +1,8 @@
+/* main{
+    background-color: black;
+} */
+.image{
+     background-size:cover; width:auto;
+    background-image:url('/assets/back1.jpg');
+    
+  }
